@@ -2,10 +2,11 @@
 # 어떤 뷰를 연결할지를 작성해놓은 서브 urls파일임
 
 from django.urls import path
-from .views import BookmarkListView, BookmarkCreateView
+
+from .views import BookmarkListView, BookmarkCreateView, BookmarkDetailView
 
 # 북마크 확인 기능 뷰에 URL을 연결하기 위한 임포트
-from .views import *
+
 
 urlpatterns = [
     path('', BookmarkListView.as_view(), name='list'),
