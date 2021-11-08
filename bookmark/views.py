@@ -15,6 +15,7 @@ from django.views.generic.detail import DetailView
 # 목록을 보여주는 뷰 만들기
 class BookmarkListView(ListView):
     model = Bookmark
+    paginate_by = 6
 
 # 북마크 추가 기능 구현을 위한 코드
 class BookmarkCreateView(CreateView):
